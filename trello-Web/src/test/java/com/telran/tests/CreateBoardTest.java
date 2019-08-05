@@ -1,26 +1,23 @@
 package com.telran.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
 public class CreateBoardTest extends TestBase {
     @Test
-    public void boardCreationTest() throws InterruptedException {
+    public void boardCreationTestFromHeader() throws InterruptedException {
 
-        int beforeCreation = getBoardsCount();
+        int beforeCreation = app.getBoardsCount();
 
-        clickOnPlusButtonOnHeader();
-        selectCreateBoardFromDropDown();
-        fillBoardCreationForm("Masa" + System.currentTimeMillis());
-        confirmBoardCreation();
-        clickOnHomeButtonOnHeader();
+        app.clickOnPlusButtonOnHeader();
+        app.selectCreateBoardFromDropDown();
+        app.fillBoardCreationForm("Masa" + System.currentTimeMillis());
+        app.confirmBoardCreation();
+        app.clickOnHomeButtonOnHeader();
 
-        Pause(10000);
+        app.Pause(10000);
 
-        int afterCreation = getBoardsCount();
+        int afterCreation = app.getBoardsCount();
 
         System.out.println(beforeCreation + ":" + afterCreation);
 
