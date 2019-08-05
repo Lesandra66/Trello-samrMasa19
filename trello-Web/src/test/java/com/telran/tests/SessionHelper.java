@@ -1,8 +1,13 @@
 package com.telran.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class SessionHelper extends HelperBase {
+    public SessionHelper(WebDriver driver) {
+        super(driver);
+    }
+
     public void login(String email, String password) throws InterruptedException {
         clickOnLoginButton();
         fillUserForm(email, password);
@@ -45,6 +50,6 @@ public class SessionHelper extends HelperBase {
     }
 
     public boolean isUserLoggedIn() {
-        return isElementsPresent(By.cssSelector("[data-test-id='header-member-menu-button']"));
+        return isElementsPresents(By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
 }

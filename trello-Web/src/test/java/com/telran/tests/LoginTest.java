@@ -9,7 +9,7 @@ public class LoginTest extends TestBase{
     @BeforeMethod
 
     public void preconditions(){
-        app.logout();
+        app.getSession().logout();
     }
 
     @Test
@@ -19,13 +19,13 @@ public class LoginTest extends TestBase{
 
         Assert.assertEquals(currentUrl,"https://trello.com/logged-out");
 
-        app.clickOnLoginButton();
-        app.fillUserForm("alekssssandra@i.ua", "qweqwe1234");
-        app.confirmLoginButton();
-        app.Pause(4000);
+        app.getSession().clickOnLoginButton();
+        app.getSession().fillUserForm("alekssssandra@i.ua", "qweqwe1234");
+        app.getSession().confirmLoginButton();
+        app.getSession().Pause(4000);
 
 
-        Assert.assertTrue(app.isUserLoggedIn());
+        Assert.assertTrue(app.getSession().isUserLoggedIn());
 
 
     }

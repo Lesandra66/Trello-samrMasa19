@@ -6,11 +6,11 @@ public class CreateCommand extends TestBase {
     @Test
     public void boardCreationTest() throws InterruptedException {
 
-        app.createCommand();
-        app.fillName("Tel-Ran");
-        app.fillDescription("Testing is cool");
-        app.clickOnButtonCreate();
-        app.clickOnHomeButtonOnHeader();
+        app.getTeam().createCommand();
+        app.getTeam().fillName("Tel-Ran");
+        app.getTeam().fillDescription("Testing is cool");
+        app.getTeam().clickOnButtonCreate();
+        app.getHeader().clickOnHomeButtonOnHeader();
 
 
     }

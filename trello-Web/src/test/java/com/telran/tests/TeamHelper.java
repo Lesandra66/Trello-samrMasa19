@@ -1,9 +1,14 @@
 package com.telran.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class TeamHelper extends HelperBase {
+    public TeamHelper(WebDriver driver) {
+        super(driver);
+    }
+
     protected void fillDescription(String commandDescription) {
         type(By.cssSelector("[name=desc]"),commandDescription);
     }
