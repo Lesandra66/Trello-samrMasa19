@@ -1,4 +1,4 @@
-package com.telran.tests;
+package com.telran.tests.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;

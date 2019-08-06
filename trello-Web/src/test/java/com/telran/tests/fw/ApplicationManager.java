@@ -1,4 +1,4 @@
-package com.telran.tests;
+package com.telran.tests.fw;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     SessionHelper session ;
 
-    WebDriver driver;
+    public WebDriver driver;
     BoardHelper board;
     TeamHelper team;
     HeaderPage header;

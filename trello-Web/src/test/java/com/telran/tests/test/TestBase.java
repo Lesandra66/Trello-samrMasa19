@@ -1,11 +1,12 @@
-package com.telran.tests;
+package com.telran.tests.test;
 
+import com.telran.tests.fw.ApplicationManager;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class TestBase {
 
-    protected final ApplicationManager app = new ApplicationManager();
+   public final ApplicationManager app = new ApplicationManager();
 
     @BeforeClass
     public void setUp() throws InterruptedException {
