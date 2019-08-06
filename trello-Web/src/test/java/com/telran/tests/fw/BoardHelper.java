@@ -1,5 +1,6 @@
 package com.telran.tests.fw;
 
+import com.telran.tests.model.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -13,8 +14,8 @@ public class BoardHelper extends HelperBase{
 
     }
 
-    public void fillBoardCreationForm(String boardName) {
-        type(By.cssSelector("[data-test-id='header-create-board-title-input']"),boardName);
+    public void fillBoardCreationForm(Board board) {
+        type(By.cssSelector("[data-test-id='header-create-board-title-input']"), board.getBoardName());
         click(By.cssSelector("button.W6rMLOx8U0MrPx [name=down]"));
         //select without team
         click(By.xpath("//nav[@class='SdlcRrTVPA8Y3K']//li[1]"));
@@ -23,8 +24,10 @@ public class BoardHelper extends HelperBase{
 
     public void selectCreateBoardFromDropDown() {
 
-        click(By.xpath("//*[@data-test-id='header-create-board-button']"));
+        click(By.cssSelector("[data-test-id='header-create-board-button']"));
     }
+
+    //*[@data-test-id='header-create-Board-button']
 
     public int getBoardsCount() {
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-2;
@@ -33,7 +36,7 @@ public class BoardHelper extends HelperBase{
 
 
     public void clickOnFirstBoard() {
-        click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Персональные доски'])[2]/following::div[6]"));
+        click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]"));
     }
 
     public void openInBoardMenuMore() {

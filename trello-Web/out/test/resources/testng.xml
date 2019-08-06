@@ -6,7 +6,9 @@
             <class name="com.telran.tests.test.LoginTest" />
             <class name="com.telran.tests.test.CreateTeamTest" />
             <class name="com.telran.tests.test.CreateBoardTest" />
+            <class name="com.telran.tests.test.BoardDelitionTest" />
             <class name="com.telran.tests.test.TeamDeletionTest" />
+
 
         </classes>
     </test>

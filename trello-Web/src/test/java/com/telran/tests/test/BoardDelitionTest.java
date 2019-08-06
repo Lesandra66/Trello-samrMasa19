@@ -1,6 +1,7 @@
 package com.telran.tests.test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Pause;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -24,6 +25,7 @@ public class BoardDelitionTest extends TestBase {
 
         app.getBoard().clickOnFirstBoard();
         app.getBoard().openInBoardMenuMore();
+        app.getBoard().Pause(1000);
         app.getBoard().closeBoard();
         app.getBoard().confirmClosingBoard();
         app.getBoard().deleteBoardForever();

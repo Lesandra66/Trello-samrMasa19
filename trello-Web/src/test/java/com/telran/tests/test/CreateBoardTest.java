@@ -1,8 +1,7 @@
 package com.telran.tests.test;
 
-import org.openqa.selenium.By;
+import com.telran.tests.model.Board;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 public class CreateBoardTest extends TestBase {
@@ -13,7 +12,7 @@ public class CreateBoardTest extends TestBase {
 
         app.getHeader().clickOnPlusButtonOnHeader();
         app.getBoard().selectCreateBoardFromDropDown();
-        app.getBoard().fillBoardCreationForm("Masa" + System.currentTimeMillis());
+        app.getBoard().fillBoardCreationForm(new Board("Masa" + System.currentTimeMillis()));
         app.getBoard().confirmBoardCreation();
         app.getHeader().clickOnHomeButtonOnHeader();
 
