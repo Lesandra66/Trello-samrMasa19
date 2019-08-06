@@ -1,6 +1,7 @@
 package com.telran.tests.test;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 public class CreateBoardTest extends TestBase {

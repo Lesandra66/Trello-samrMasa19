@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     SessionHelper session ;
 
-    public WebDriver driver;
+    WebDriver driver;
     BoardHelper board;
     TeamHelper team;
     HeaderPage header;
@@ -48,6 +48,10 @@ public class ApplicationManager {
 
     public HeaderPage getHeader() {
         return header;
+    }
+
+    public String getUrl() {
+        return driver.getCurrentUrl();
     }
 }
 

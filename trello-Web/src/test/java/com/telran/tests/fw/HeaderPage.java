@@ -21,7 +21,8 @@ public class HeaderPage extends HelperBase{
         click(By.cssSelector("[name=add]"));
     }
 
-    protected void clickOnMainPageHeader() {
+    public void clickOnMainPageHeader() {
+
         click(By.cssSelector("[data-test-id='home-link']"));
     }
 }

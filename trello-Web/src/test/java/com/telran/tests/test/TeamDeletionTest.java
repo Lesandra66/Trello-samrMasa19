@@ -1,12 +1,21 @@
 package com.telran.tests.test;
 
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TeamDeletionTest extends TestBase{
-
+  @BeforeMethod
+  public void preconditions() throws InterruptedException {
+    if(!app.getTeam().isTeamPresent())
+    {
+      app.getTeam().createTeam();
+    }
+  }
 
   @Test
   public void testTeamDeletion() throws InterruptedException {
+
     app.getSession().Pause(15000);
     int before = app.getTeam().getTeamsCount();
     System.out.println(before + ":");
@@ -23,7 +32,7 @@ public class TeamDeletionTest extends TestBase{
 
     //System.out.println(before + ":" + after);
 
-    //Assert.assertEquals(after,before + 1);
+    Assert.assertEquals(after,before - 1);
 
 
   }

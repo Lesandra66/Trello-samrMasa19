@@ -33,6 +33,7 @@ public class HelperBase {
 
 
     public boolean isElementsPresents(By locator) {
+
         return driver.findElements(locator).size()>0;
     }
 
