@@ -30,7 +30,6 @@ public class TeamDeletionTest extends TestBase{
     int after = app.getTeam().getTeamsCount();
     System.out.println(after);
 
-    //System.out.println(before + ":" + after);
 
     Assert.assertEquals(after,before - 1);
 

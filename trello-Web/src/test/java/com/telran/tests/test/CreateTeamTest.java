@@ -1,5 +1,6 @@
 package com.telran.tests.test;
 
+import com.telran.tests.model.Team;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -11,8 +12,8 @@ public class CreateTeamTest extends TestBase {
         int beforeCreation = app.getTeam().getTeamsCount();
 
         app.getTeam().clickPlusButtonCreateTeam();
-        app.getTeam().fillName("Tel-Ran");
-        app.getTeam().fillDescription("Testing is cool");
+        app.getTeam().fillFormNameDescription(new Team("Tel-Ran", "Testing is cool"));
+        //app.getTeam().fillDescription("Testing is cool");
         app.getTeam().clickOnButtonCreate();
         app.getHeader().clickOnHomeButtonOnHeader();
 

@@ -1,5 +1,6 @@
 package com.telran.tests.test;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class CreateBoardTest extends TestBase {
         app.getBoard().confirmBoardCreation();
         app.getHeader().clickOnHomeButtonOnHeader();
 
-        app.getSession().Pause(10000);
+        //app.getSession().Pause(10000);
 
         int afterCreation = app.getBoard().getBoardsCount();
 
@@ -25,8 +26,8 @@ public class CreateBoardTest extends TestBase {
        Assert.assertEquals(afterCreation,beforeCreation + 1);
 
 
-    }
 
+    }
 
 
 

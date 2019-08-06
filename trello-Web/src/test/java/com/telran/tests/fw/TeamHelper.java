@@ -1,5 +1,6 @@
 package com.telran.tests.fw;
 
+import com.telran.tests.model.Team;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,9 +13,9 @@ public class TeamHelper extends HelperBase {
         super(driver);
     }
 
-    public void fillDescription(String commandDescription) {
-        type(By.cssSelector("[name=desc]"),commandDescription);
-    }
+//    public void fillDescription(String commandDescription) {
+//        type(By.cssSelector("[name=desc]"),commandDescription);
+//    }
 
     public void clickOnButtonCreate() {
         click(By.xpath("//input[@class='primary wide js-save']"));
@@ -22,9 +23,9 @@ public class TeamHelper extends HelperBase {
 
     }
 
-    public void fillName(String commandName) {
-
-        type(By.cssSelector("[name=displayName]"),commandName);
+    public void fillFormNameDescription(Team team) {
+        type(By.cssSelector("[name=displayName]"), team.getCommandName());
+        type(By.cssSelector("[name=desc]"), team.getCommandDescription());
     }
 
     public void clickPlusButtonCreateTeam() {
@@ -38,11 +39,13 @@ public class TeamHelper extends HelperBase {
     }
 
     public void clickDeleteTeamLink() {
-      click(By.cssSelector(".quiet-button"));
+
+        click(By.cssSelector(".quiet-button"));
     }
 
     public void clickOnFirstTeam() {
-      click(By.cssSelector("[data-test-id='home-team-tab-name']"));
+
+        click(By.cssSelector("[data-test-id='home-team-tab-name']"));
     }
 
     public void clickOnTeamSettings() {
@@ -60,8 +63,8 @@ public class TeamHelper extends HelperBase {
 
     public void createTeam() throws InterruptedException {
         clickPlusButtonCreateTeam();
-        fillName("Tel-Ran");
-        fillDescription("Testing is cool");
+        fillFormNameDescription(new Team("Tel-Ran", "Testing is cool"));
+        //fillDescription("Testing is cool");
         clickOnButtonCreate();
         header.clickOnHomeButtonOnHeader();
     }
@@ -79,4 +82,7 @@ public class TeamHelper extends HelperBase {
 
         }
     }
+
+
+
 }

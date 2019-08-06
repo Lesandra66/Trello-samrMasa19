@@ -29,4 +29,30 @@ public class BoardHelper extends HelperBase{
     public int getBoardsCount() {
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-2;
     }
+
+
+
+    public void clickOnFirstBoard() {
+        click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Персональные доски'])[2]/following::div[6]"));
+    }
+
+    public void openInBoardMenuMore() {
+        click(By.cssSelector(".js-open-more"));
+    }
+
+    public void closeBoard() {
+        click(By.cssSelector(".js-close-board"));
+    }
+
+    public void confirmClosingBoard() {
+        click(By.xpath("//*[@class='js-confirm full negate']"));
+    }
+
+    public void deleteBoardForever() {
+        click(By.xpath("//*[@class='quiet js-delete']"));
+    }
+
+    public void confirmDeletionBoard() {
+        click(By.xpath("//*[@class='js-confirm full negate']"));
+    }
 }
