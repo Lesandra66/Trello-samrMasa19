@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class BoardDelitionTest extends TestBase {
+public class BoardDeleteTest extends TestBase {
     @BeforeMethod
     public void preconditions() throws InterruptedException {
         if(!app.getTeam().isTeamPresent())
@@ -17,7 +17,7 @@ public class BoardDelitionTest extends TestBase {
     }
 
     @Test
-    public void boardDelitionFromMenu() throws InterruptedException {
+    public void boardDeleteFromMenu() throws InterruptedException {
 
         int before = app.getBoard().getBoardsCount();
 

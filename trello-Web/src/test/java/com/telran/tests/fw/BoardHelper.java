@@ -5,6 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class BoardHelper extends HelperBase{
+
+    HeaderPage header = new HeaderPage(driver);
+//    private HeaderPage header;
+
     public BoardHelper(WebDriver driver) {
         super(driver);
     }
@@ -27,7 +31,7 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("[data-test-id='header-create-board-button']"));
     }
 
-    //*[@data-test-id='header-create-Board-button']
+
 
     public int getBoardsCount() {
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-2;
@@ -40,10 +44,12 @@ public class BoardHelper extends HelperBase{
     }
 
     public void openInBoardMenuMore() {
+
         click(By.cssSelector(".js-open-more"));
     }
 
     public void closeBoard() {
+
         click(By.cssSelector(".js-close-board"));
     }
 
@@ -52,10 +58,22 @@ public class BoardHelper extends HelperBase{
     }
 
     public void deleteBoardForever() {
+
         click(By.xpath("//*[@class='quiet js-delete']"));
     }
 
     public void confirmDeletionBoard() {
         click(By.xpath("//*[@class='js-confirm full negate']"));
+    }
+
+    public void cleanBoards() throws InterruptedException {
+        clickOnFirstBoard();
+       openInBoardMenuMore();
+       Pause(1000);
+       closeBoard();
+       confirmClosingBoard();
+       deleteBoardForever();
+       confirmDeletionBoard();
+       header.clickOnHomeButtonOnHeader();
     }
 }

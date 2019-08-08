@@ -8,6 +8,7 @@ public class HeaderPage extends HelperBase{
         super(driver);
     }
 
+
     public void clickOnHomeButtonOnHeader() throws InterruptedException {
         Pause(5000);
         click(By.cssSelector("[name=house]"));

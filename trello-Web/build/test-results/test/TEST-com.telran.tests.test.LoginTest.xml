@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.tests.test.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-06T17:51:54" hostname="DESKTOP-P99IBT1" time="5.564">
+<testsuite name="com.telran.tests.test.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-08T08:38:34" hostname="DESKTOP-P99IBT1" time="7.236">
   <properties/>
-  <testcase name="loginTest" classname="com.telran.tests.test.LoginTest" time="5.564"/>
+  <testcase name="loginTest" classname="com.telran.tests.test.LoginTest" time="7.236"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[1565253511975	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+l@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:153618
+u@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:153710
+fe/u</a.sendEvents@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:153972
+fe/s.flush@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:156467
+stop@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:168011
+value@https://a.trellocdn.com/prgb/dist/br/app.b85aec90b3dea20c25f6.js:1:3039776
+Ba@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:82398
+qa@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:85073
+Is/<@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:98280
+t.unstable_runWithPriority@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:343:3194
+Is@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:98215
+js@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:97991
+Ts@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:97336
+As@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:98711
+Tn@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:30569
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11
+1565253514967	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+]]></system-err>
 </testsuite>

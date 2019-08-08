@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.tests.test.BoardDeleteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-08T08:39:19" hostname="DESKTOP-P99IBT1" time="19.157">
+  <properties/>
+  <testcase name="boardDeleteFromMenu" classname="com.telran.tests.test.BoardDeleteTest" time="19.157"/>
+  <system-out><![CDATA[31:
+30
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

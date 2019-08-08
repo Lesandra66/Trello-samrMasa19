@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.tests.test.BoardDelitionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-06T17:52:50" hostname="DESKTOP-P99IBT1" time="35.483">
-  <properties/>
-  <testcase name="boardDelitionFromMenu" classname="com.telran.tests.test.BoardDelitionTest" time="35.483"/>
-  <system-out><![CDATA[36:
-35
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

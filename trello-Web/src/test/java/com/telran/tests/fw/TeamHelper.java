@@ -63,8 +63,7 @@ public class TeamHelper extends HelperBase {
 
     public void createTeam() throws InterruptedException {
         clickPlusButtonCreateTeam();
-        fillFormNameDescription(new Team("Tel-Ran", "Testing is cool"));
-        //fillDescription("Testing is cool");
+        fillFormNameDescription(new Team().setCommandName("Tel-Ran").setCommandDescription("Testing is cool"));
         clickOnButtonCreate();
         header.clickOnHomeButtonOnHeader();
     }

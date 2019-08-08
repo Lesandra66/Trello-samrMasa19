@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.tests.test.CreateTeamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-06T17:52:00" hostname="DESKTOP-P99IBT1" time="15.842">
+<testsuite name="com.telran.tests.test.CreateTeamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-08T08:38:41" hostname="DESKTOP-P99IBT1" time="18.411">
   <properties/>
-  <testcase name="teamCreationTest" classname="com.telran.tests.test.CreateTeamTest" time="15.842"/>
+  <testcase name="teamCreationTest" classname="com.telran.tests.test.CreateTeamTest" time="18.411"/>
   <system-out><![CDATA[2:3
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

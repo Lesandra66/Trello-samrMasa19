@@ -1,11 +1,11 @@
 package com.telran.tests.model;
 
 public class Board {
-    private final String boardName;
+    private String boardName;
 
-    public Board(String boardName) {
-
+    public Board setBoardName(String boardName) {
         this.boardName = boardName;
+        return this;
     }
 
     public String getBoardName() {

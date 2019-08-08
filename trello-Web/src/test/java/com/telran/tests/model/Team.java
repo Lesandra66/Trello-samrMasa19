@@ -1,13 +1,8 @@
 package com.telran.tests.model;
 
 public class Team {
-    private final String commandName;
-    private final String commandDescription;
-
-    public Team(String commandName, String commandDescription) {
-        this.commandName = commandName;
-        this.commandDescription = commandDescription;
-    }
+    private String commandName;
+    private String commandDescription;
 
     public String getCommandName() {
 
@@ -17,5 +12,15 @@ public class Team {
     public String getCommandDescription() {
 
         return commandDescription;
+    }
+
+    public Team setCommandName(String commandName) {
+        this.commandName = commandName;
+        return this;
+    }
+
+    public Team setCommandDescription(String commandDescription) {
+        this.commandDescription = commandDescription;
+        return this;
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.tests.test.CreateBoardTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-06T17:52:17" hostname="DESKTOP-P99IBT1" time="33.401">
+<testsuite name="com.telran.tests.test.CreateBoardTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-08T08:39:01" hostname="DESKTOP-P99IBT1" time="18.034">
   <properties/>
-  <testcase name="boardCreationTestFromHeader" classname="com.telran.tests.test.CreateBoardTest" time="33.401"/>
-  <system-out><![CDATA[35:36
+  <testcase name="boardCreationTestFromHeader" classname="com.telran.tests.test.CreateBoardTest" time="18.034"/>
+  <system-out><![CDATA[30:31
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
