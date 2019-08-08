@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public class BoardHelper extends HelperBase{
 
     HeaderPage header = new HeaderPage(driver);
-//    private HeaderPage header;
+
 
     public BoardHelper(WebDriver driver) {
         super(driver);
@@ -67,13 +67,19 @@ public class BoardHelper extends HelperBase{
     }
 
     public void cleanBoards() throws InterruptedException {
-        clickOnFirstBoard();
-       openInBoardMenuMore();
-       Pause(1000);
-       closeBoard();
-       confirmClosingBoard();
-       deleteBoardForever();
-       confirmDeletionBoard();
-       header.clickOnHomeButtonOnHeader();
+        int before = getBoardsCount();
+        while (before > 4) {
+
+            clickOnFirstBoard();
+            openInBoardMenuMore();
+            Pause(1000);
+            closeBoard();
+            confirmClosingBoard();
+            deleteBoardForever();
+            confirmDeletionBoard();
+            header.clickOnHomeButtonOnHeader();
+
+            before = getBoardsCount();
+        }
     }
 }

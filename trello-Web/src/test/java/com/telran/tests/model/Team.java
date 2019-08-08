@@ -23,4 +23,11 @@ public class Team {
         this.commandDescription = commandDescription;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Team :" +
+                "commandName= " + commandName +
+                ", commandDescription= " + commandDescription;
+    }
 }
