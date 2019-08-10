@@ -82,4 +82,17 @@ public class BoardHelper extends HelperBase{
             before = getBoardsCount();
         }
     }
+
+    public boolean isBoardPresent() {
+
+        return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+    }
+
+    public void createBoard() throws InterruptedException {
+       header.clickOnPlusButtonOnHeader();
+       selectCreateBoardFromDropDown();
+       fillBoardCreationForm(new Board().setBoardName("Masa" + System.currentTimeMillis()));
+       confirmBoardCreation();
+       header.clickOnHomeButtonOnHeader();
+    }
 }

@@ -12,4 +12,11 @@ public class Board {
 
         return boardName;
     }
+
+    @Override
+    public String toString() {
+        return "Board{" +
+                "boardName='" + boardName + '\'' +
+                '}';
+    }
 }

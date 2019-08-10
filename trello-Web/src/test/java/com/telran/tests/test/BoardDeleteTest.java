@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 public class BoardDeleteTest extends TestBase {
     @BeforeMethod
     public void preconditions() throws InterruptedException {
-        if(!app.getTeam().isTeamPresent())
+        if(!app.getBoard().isBoardPresent())
         {
-            app.getTeam().createTeam();
+            app.getBoard().createBoard();
         }
     }
 
