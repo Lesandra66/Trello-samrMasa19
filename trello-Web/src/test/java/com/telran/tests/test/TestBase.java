@@ -2,6 +2,7 @@ package com.telran.tests.test;
 
 import com.telran.tests.fw.ApplicationManager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -24,7 +25,6 @@ public class TestBase {
 
         app.stop();
     }
-
 
 
 

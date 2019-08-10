@@ -95,4 +95,6 @@ public class BoardHelper extends HelperBase{
        confirmBoardCreation();
        header.clickOnHomeButtonOnHeader();
     }
+
+
 }

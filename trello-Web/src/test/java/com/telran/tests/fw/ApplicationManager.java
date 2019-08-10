@@ -10,12 +10,14 @@ import org.openqa.selenium.remote.BrowserType;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    SessionHelper session ;
 
+    SessionHelper session ;
     WebDriver driver;
     BoardHelper board;
     TeamHelper team;
     HeaderPage header;
+    SettingsHelper set;
+
     private String browser;
 
     public ApplicationManager(String browser) {
@@ -45,6 +47,7 @@ public class ApplicationManager {
         board = new BoardHelper(driver);
         team = new TeamHelper(driver);
         header = new HeaderPage(driver);
+        set = new SettingsHelper(driver);
 
         session.login("alekssssandra@i.ua", "qweqwe1234");
     }
@@ -73,6 +76,13 @@ public class ApplicationManager {
     public String getUrl() {
         return driver.getCurrentUrl();
     }
+
+    public SettingsHelper getSet() {
+        return set;
+    }
+//    public SettingsHelper getSet() {
+//        return getSet();
+//    }
 }
 
 

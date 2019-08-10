@@ -13,9 +13,6 @@ public class TeamHelper extends HelperBase {
         super(driver);
     }
 
-//    public void fillDescription(String commandDescription) {
-//        type(By.cssSelector("[name=desc]"),commandDescription);
-//    }
 
     public void clickOnButtonCreate() {
         click(By.xpath("//input[@class='primary wide js-save']"));
