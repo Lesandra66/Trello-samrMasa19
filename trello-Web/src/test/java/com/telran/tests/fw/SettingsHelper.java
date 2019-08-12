@@ -16,6 +16,7 @@ public class SettingsHelper extends HelperBase {
     }
 
     public void attachPhoto(File file) throws InterruptedException {
+        Pause(15000);
         attach(By.xpath("//*[@name='file']"),file);
 
     }
@@ -29,7 +30,7 @@ public class SettingsHelper extends HelperBase {
     }
     public void clickOnButtonProfileOnHeader() {
 
-        click(By.xpath("//span[@class='_24AWINHReYjNBf']"));
+        click(By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
 
 

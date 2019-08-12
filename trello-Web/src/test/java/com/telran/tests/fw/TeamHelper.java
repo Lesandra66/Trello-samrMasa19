@@ -37,7 +37,7 @@ public class TeamHelper extends HelperBase {
 
     public void clickDeleteTeamLink() {
 
-        click(By.xpath("//*[@class='quiet-button']"));    //*[@class='quiet-button']
+        click(By.xpath("//*[@class='quiet-button']"));
     }
 
     public void clickOnFirstTeam() {

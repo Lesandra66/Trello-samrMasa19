@@ -22,8 +22,9 @@ public class TeamDeletionTest extends TestBase{
     System.out.println(before + ":");
 
     app.getTeam().clickOnFirstTeam();
-    app.getTeam().clickOnTeamSettings();
     app.getTeam().Pause(15000);
+    app.getTeam().clickOnTeamSettings();
+    //app.getTeam().Pause(15000);
     app.getTeam().clickDeleteTeamLink();
     app.getTeam().confirmTeamDeletionButton();
 
