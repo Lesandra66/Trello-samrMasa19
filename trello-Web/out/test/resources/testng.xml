@@ -8,6 +8,7 @@
             <class name="com.telran.tests.test.CreateBoardTest" />
             <class name="com.telran.tests.test.BoardDeleteTest" />
             <class name="com.telran.tests.test.TeamDeletionTest" />
+            <class name="com.telran.tests.test.CreateProfileTest" />
 
 
         </classes>

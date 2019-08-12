@@ -31,13 +31,13 @@ public class TeamHelper extends HelperBase {
     }
 
     public void confirmTeamDeletionButton() {
-        //new WebDriverWait(driver,15).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".js-confirm")));
-      click(By.cssSelector(".js-confirm"));
+
+      click(By.xpath("//*[@class='js-confirm full negate']"));
     }
 
     public void clickDeleteTeamLink() {
 
-        click(By.cssSelector(".quiet-button"));
+        click(By.xpath("//*[@class='quiet-button']"));    //*[@class='quiet-button']
     }
 
     public void clickOnFirstTeam() {
@@ -46,10 +46,11 @@ public class TeamHelper extends HelperBase {
     }
 
     public void clickOnTeamSettings() {
-      click(By.cssSelector(".icon-gear"));
+      click(By.xpath("//span[contains(text(),'Settings')]"));
     }
 
-    public int getTeamsCount() {
+    public int getTeamsCount() throws InterruptedException {
+        Pause(15000);
         WebElement teamsList = driver.findElement(By.cssSelector("nav.home-left-sidebar-container .js-react-root"));
         return teamsList.findElements(By.xpath(".//li")).size();
     }
@@ -72,6 +73,7 @@ public class TeamHelper extends HelperBase {
             clickOnFirstTeam();
             clickOnTeamSettings();
             clickDeleteTeamLink();
+            //Pause(2000);
             confirmTeamDeletionButton();
             count = getTeamsCount();
             Pause(1000);

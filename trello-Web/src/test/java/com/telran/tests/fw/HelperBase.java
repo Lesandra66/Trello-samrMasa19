@@ -1,9 +1,8 @@
 package com.telran.tests.fw;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+
+import java.io.File;
 
 public class HelperBase {
     WebDriver driver;
@@ -39,6 +38,15 @@ public class HelperBase {
 
     public void Pause(int millis) throws InterruptedException {
         Thread.sleep(millis);
+    }
+    public void attach(By locator, File file) {
+
+        driver.findElement(locator).sendKeys(file.getAbsolutePath());
+    }
+
+    public void takeScreenshot(){
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File("");
     }
 
 

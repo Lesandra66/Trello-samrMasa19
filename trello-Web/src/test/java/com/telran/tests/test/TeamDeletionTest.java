@@ -1,5 +1,6 @@
 package com.telran.tests.test;
 
+import org.openqa.selenium.interactions.Pause;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -22,6 +23,7 @@ public class TeamDeletionTest extends TestBase{
 
     app.getTeam().clickOnFirstTeam();
     app.getTeam().clickOnTeamSettings();
+    app.getTeam().Pause(15000);
     app.getTeam().clickDeleteTeamLink();
     app.getTeam().confirmTeamDeletionButton();
 

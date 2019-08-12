@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.tests.test.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-08T08:38:34" hostname="DESKTOP-P99IBT1" time="7.236">
+<testsuite name="com.telran.tests.test.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-10T21:53:26" hostname="DESKTOP-P99IBT1" time="7.006">
   <properties/>
-  <testcase name="loginTest" classname="com.telran.tests.test.LoginTest" time="7.236"/>
+  <testcase name="loginTest" classname="com.telran.tests.test.LoginTest" time="7.006"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1565253511975	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+  <system-err><![CDATA[1565474003961	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:223:64
-l@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:153618
-u@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:153710
-fe/u</a.sendEvents@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:153972
-fe/s.flush@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:156467
-stop@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:57:168011
-value@https://a.trellocdn.com/prgb/dist/br/app.b85aec90b3dea20c25f6.js:1:3039776
-Ba@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:82398
-qa@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:85073
-Is/<@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:98280
-t.unstable_runWithPriority@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:343:3194
-Is@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:98215
-js@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:97991
-Ts@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:97336
-As@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:98711
-Tn@https://a.trellocdn.com/prgb/dist/br/ltp.a63c1829bbe30f7b16df.js:334:30569
+l@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:57:151855
+u@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:57:151947
+fe/u</a.sendEvents@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:57:152209
+fe/s.flush@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:57:154704
+stop@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:57:166248
+value@https://a.trellocdn.com/prgb/dist/br/app.136387930d621ee925a5.js:1:3042313
+Ba@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:82398
+qa@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:85073
+Is/<@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:98280
+t.unstable_runWithPriority@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:343:3194
+Is@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:98215
+js@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:97991
+Ts@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:97336
+As@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:98711
+Tn@https://a.trellocdn.com/prgb/dist/br/ltp.d308847b2d4908f0fa13.js:334:30569
 event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
 webdriverClickElement@chrome://marionette/content/interaction.js:183:11
-1565253514967	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+1565474006879	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:223:64
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565395285947%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
 ]]></system-err>
 </testsuite>

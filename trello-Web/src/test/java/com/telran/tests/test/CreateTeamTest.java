@@ -13,26 +13,26 @@ import java.util.List;
 
 public class CreateTeamTest extends TestBase {
 
-
-    @Test(dataProvider = "teams",dataProviderClass = DataProviders.class)
-    public void teamCreationFromheaderWithDataProviderTest(Team team) throws InterruptedException {
-
-        int beforeCreation = app.getTeam().getTeamsCount();
-
-        app.getTeam().clickPlusButtonCreateTeam();
-        app.getTeam().fillFormNameDescription(team);
-        app.getTeam().clickOnButtonCreate();
-        app.getHeader().clickOnHomeButtonOnHeader();
-
-        int afterCreation = app.getTeam().getTeamsCount();
-
-        System.out.println(beforeCreation + ":" + afterCreation);
-
-        Assert.assertEquals(afterCreation,beforeCreation + 1);
-
-
-    }
-    @Test(enabled = false)
+//
+//    @Test(dataProvider = "teams",dataProviderClass = DataProviders.class)
+//    public void teamCreationFromheaderWithDataProviderTest(Team team) throws InterruptedException {
+//
+//        int beforeCreation = app.getTeam().getTeamsCount();
+//
+//        app.getTeam().clickPlusButtonCreateTeam();
+//        app.getTeam().fillFormNameDescription(team);
+//        app.getTeam().clickOnButtonCreate();
+//        app.getHeader().clickOnHomeButtonOnHeader();
+//
+//        int afterCreation = app.getTeam().getTeamsCount();
+//
+//        System.out.println(beforeCreation + ":" + afterCreation);
+//
+//        Assert.assertEquals(afterCreation,beforeCreation + 1);
+//
+//
+//    }
+    @Test
     public void teamCreationTest() throws InterruptedException {
 
         int beforeCreation = app.getTeam().getTeamsCount();
