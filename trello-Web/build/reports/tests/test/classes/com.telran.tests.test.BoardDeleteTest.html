@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">10.071s</div>
+<div class="counter">10.476s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,13 +76,14 @@
 <a name="boardDeleteFromMenu"></a>
 <h3 class="failures">boardDeleteFromMenu</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]&quot;}
+  (Session info: chrome=76.0.3809.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P99IBT1', ip: '192.168.186.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2488, moz:profile: C:\Users\SAMR\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 71349454-96ea-402d-8a0c-4467cd346468
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SAMR\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81d185769bf1b1f87c730fd870424ae2
 *** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -98,7 +99,13 @@ Session ID: 71349454-96ea-402d-8a0c-4467cd346468
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.telran.tests.fw.HelperBase.click(HelperBase.java:16)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy13.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.telran.tests.fw.HelperBase.click(HelperBase.java:17)
 	at com.telran.tests.fw.BoardHelper.clickOnFirstBoard(BoardHelper.java:43)
 	at com.telran.tests.test.BoardDeleteTest.boardDeleteFromMenu(BoardDeleteTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -167,7 +174,7 @@ Session ID: 71349454-96ea-402d-8a0c-4467cd346468
 </thead>
 <tr>
 <td class="failures">boardDeleteFromMenu</td>
-<td class="failures">10.071s</td>
+<td class="failures">10.476s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -175,7 +182,24 @@ Session ID: 71349454-96ea-402d-8a0c-4467cd346468
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>-1:
+<pre>14:57:49.592 [Test worker] INFO  com.telran.tests.test.TestBase - StartboardDeleteFromMenuwith parameters[]
+14:57:49.592 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:49.632 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:57:49.632 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:49.655 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+-1:
+14:57:49.655 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: (.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]
+14:57:59.702 [Test worker] ERROR c.t.t.f.ApplicationManager$MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]&quot;}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P99IBT1', ip: '192.168.186.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\SAMR\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81d185769bf1b1f87c730fd870424ae2
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Personal Boards'])[2]/following::div[6]}
+------------------------------
+Screenshot name: screenshot-1565611080104.png
 </pre>
 </span>
 </div>
@@ -187,7 +211,7 @@ Session ID: 71349454-96ea-402d-8a0c-4467cd346468
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at Aug 11, 2019 12:58:34 AM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Aug 12, 2019 2:59:35 PM</p>
 </div>
 </div>
 </body>

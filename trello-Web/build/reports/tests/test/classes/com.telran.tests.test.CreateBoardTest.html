@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">6</div>
+<div class="counter">7</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m52.53s</div>
+<div class="counter">1m56.00s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">14%</div>
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -69,24 +69,86 @@
 <li>
 <a href="#tab2">Standard output</a>
 </li>
-<li>
-<a href="#tab3">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="boardCreationFromheaderWithDataProviderTest[1](Board{boardName='A'})"></a>
-<h3 class="failures">boardCreationFromheaderWithDataProviderTest[1](Board{boardName='A'})</h3>
+<a name="boardCreationFromheaderWithDataProviderTest[0](Board{boardName='name'})"></a>
+<h3 class="failures">boardCreationFromheaderWithDataProviderTest[0](Board{boardName='name'})</h3>
 <span class="code">
-<pre>java.lang.AssertionError: expected [0] but found [-2]
+<pre>java.lang.AssertionError: expected [0] but found [-1]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:25)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="boardCreationFromheaderWithDataProviderTest[1](Board{boardName='A'})"></a>
+<h3 class="failures">boardCreationFromheaderWithDataProviderTest[1](Board{boardName='A'})</h3>
+<span class="code">
+<pre>java.lang.AssertionError: expected [0] but found [-1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,7 +213,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:25)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -216,7 +278,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:25)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -281,7 +343,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:25)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -346,7 +408,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:25)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -411,7 +473,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:25)
+	at com.telran.tests.test.CreateBoardTest.boardCreationFromheaderWithDataProviderTest(CreateBoardTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -477,38 +539,38 @@
 </tr>
 </thead>
 <tr>
-<td class="success">boardCreationFromheaderWithDataProviderTest[0](Board{boardName='name'})</td>
-<td class="success">27.899s</td>
-<td class="success">passed</td>
+<td class="failures">boardCreationFromheaderWithDataProviderTest[0](Board{boardName='name'})</td>
+<td class="failures">16.732s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">boardCreationFromheaderWithDataProviderTest[1](Board{boardName='A'})</td>
-<td class="failures">31.216s</td>
+<td class="failures">16.396s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">boardCreationFromheaderWithDataProviderTest[2](Board{boardName='12'})</td>
-<td class="failures">25.329s</td>
+<td class="failures">16.423s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">boardCreationFromheaderWithDataProviderTest[3](Board{boardName='#$%'})</td>
-<td class="failures">21.185s</td>
+<td class="failures">16.521s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">boardCreationFromheaderWithDataProviderTest[4](Board{boardName='Om6Rijq2z1'})</td>
-<td class="failures">20.954s</td>
+<td class="failures">16.402s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">boardCreationFromheaderWithDataProviderTest[5](Board{boardName='Om6Rijq2z1Om6Rijq2z1'})</td>
-<td class="failures">20.287s</td>
+<td class="failures">16.728s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">boardCreationFromheaderWithDataProviderTest[6](Board{boardName='Om6Rijq2z1Om6Rijq2z1Om6Rijq2z1'})</td>
-<td class="failures">25.663s</td>
+<td class="failures">16.801s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -516,97 +578,182 @@
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>-2:-1
--1:-2
+<pre>14:55:53.532 [Test worker] INFO  com.telran.tests.test.TestBase - StartboardCreationFromheaderWithDataProviderTestwith parameters[Board{boardName='name'}]
+14:55:53.532 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:55:53.562 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:55:53.562 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:55:53.591 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:55:53.768 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:55:53.794 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:55:53.950 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:55:54.029 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:55:54.109 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:55:54.128 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:55:54.171 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:55:54.192 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:55:54.305 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:55:54.394 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:55:54.492 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:55:54.528 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:55:54.642 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:55:54.678 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:55:59.795 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:55:59.834 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:56:00.071 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:56:00.139 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:56:10.239 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:10.264 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 -1:-1
+14:56:10.268 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:10.301 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:56:10.301 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:56:10.325 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:56:10.417 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:56:10.437 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:56:10.607 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:10.629 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:10.718 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:10.739 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:10.795 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:10.820 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:10.898 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:56:10.926 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:56:11.057 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:56:11.085 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:56:11.209 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:56:11.233 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:56:16.382 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:56:16.409 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:56:16.499 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:56:16.521 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:56:26.640 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:26.664 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 -1:-1
+14:56:26.668 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:26.696 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:56:26.696 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:56:26.725 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:56:26.827 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:56:26.852 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:56:26.998 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:27.021 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:27.116 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:27.137 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:27.188 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:27.212 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:27.310 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:56:27.338 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:56:27.505 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:56:27.544 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:56:27.660 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:56:27.685 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:56:32.821 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:56:32.845 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:56:32.931 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:56:32.961 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:56:43.066 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:43.091 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 -1:-1
+14:56:43.095 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:43.120 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:56:43.120 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:56:43.149 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:56:43.246 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:56:43.272 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:56:43.426 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:43.451 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:43.559 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:43.582 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:43.633 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:56:43.659 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:56:43.907 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:56:43.937 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:56:44.049 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:56:44.070 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:56:44.185 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:56:44.206 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:56:49.316 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:56:49.341 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:56:49.421 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:56:49.456 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:56:59.592 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:59.616 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 -1:-1
+14:56:59.621 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:56:59.654 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:56:59.654 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:56:59.677 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:56:59.827 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:56:59.850 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:56:59.977 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:00.001 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:00.116 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:00.133 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:00.176 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:00.198 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:00.385 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:57:00.406 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:57:00.494 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:57:00.513 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:57:00.607 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:57:00.630 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:57:05.725 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:57:05.750 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:57:05.829 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:57:05.868 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:57:15.995 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:16.023 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
 -1:-1
-</pre>
-</span>
-</div>
-<div id="tab3" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>1565474135349	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474136118	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474136990	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474137757	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474138546	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474144469	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474145223	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474166312	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474167063	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474167813	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474168710	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474169464	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474170441	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474176203	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474176961	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474191390	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474192140	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474192895	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474193882	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474194635	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474195562	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474201782	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474212592	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474213336	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474214087	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474215289	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474216046	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474216921	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474235230	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474236467	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474242283	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474243038	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474253823	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474254559	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474255294	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474256661	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474257939	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474263818	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474264573	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
+14:57:16.027 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:16.054 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:57:16.054 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:57:16.076 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:57:16.171 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:57:16.196 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:57:16.363 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:16.389 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:16.486 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:16.509 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:16.564 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:16.586 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:17.019 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:57:17.041 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:57:17.166 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:57:17.193 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:57:17.315 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:57:17.336 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:57:22.465 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:57:22.491 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:57:22.604 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:57:22.634 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:57:32.727 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:32.752 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+-1:-1
+14:57:32.756 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:32.785 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+14:57:32.786 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=add]
+14:57:32.812 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=add]found
+14:57:32.916 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-button']
+14:57:32.942 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-button']found
+14:57:33.092 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:33.115 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:33.211 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:33.231 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:33.288 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-title-input']
+14:57:33.314 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-title-input']found
+14:57:33.867 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]
+14:57:33.890 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: button.W6rMLOx8U0MrPx [name=down]found
+14:57:33.996 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+14:57:34.018 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+14:57:34.128 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-create-board-submit-button']
+14:57:34.151 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-create-board-submit-button']found
+14:57:39.256 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:57:39.280 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:57:39.406 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:57:39.438 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+14:57:49.532 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//li
+14:57:49.557 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+-1:-1
 </pre>
 </span>
 </div>
@@ -618,7 +765,7 @@ bail@chrome://marionette/content/sync.js:223:64
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at Aug 11, 2019 12:58:34 AM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Aug 12, 2019 2:59:35 PM</p>
 </div>
 </div>
 </body>

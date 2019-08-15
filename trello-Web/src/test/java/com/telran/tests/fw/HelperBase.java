@@ -2,12 +2,16 @@ package com.telran.tests.fw;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
 
+
 public class HelperBase {
     WebDriver driver;
+    Logger logger = LoggerFactory.getLogger(HelperBase.class);
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;
@@ -51,7 +55,8 @@ public class HelperBase {
         File screenshot = new File("src/test/screenshots/screenshot-"
                 + System.currentTimeMillis()+ ".png");
         Files.copy(tmp,screenshot);
-        System.out.println("Screenshot name: " + screenshot.getName());
+        System.out.println("------------------------------");
+        logger.info("Screenshot name: " + screenshot.getName());
     }
 
 

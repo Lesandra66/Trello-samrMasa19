@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.tests.test.CreateProfileTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-12T11:59:02" hostname="DESKTOP-P99IBT1" time="32.291">
+  <properties/>
+  <testcase name="creationAvatar" classname="com.telran.tests.test.CreateProfileTest" time="32.291"/>
+  <system-out><![CDATA[14:59:01.499 [Test worker] INFO  com.telran.tests.test.TestBase - StartcreationAvatarwith parameters[]
+------------------------------
+Screenshot name: screenshot-1565611142001.png
+14:59:02.003 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='header-member-menu-button']
+14:59:02.028 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='header-member-menu-button']found
+14:59:02.226 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //span[contains(text(),'Profile and Visibility')]
+14:59:02.264 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //span[contains(text(),'Profile and Visibility')]found
+14:59:02.368 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [class='_2e97X7K2YRLv4Q']
+14:59:03.394 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [class='_2e97X7K2YRLv4Q']found
+14:59:18.813 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@name='file']
+14:59:18.851 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@name='file']found
+14:59:23.955 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [name=house]
+14:59:24.024 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [name=house]found
+14:59:24.181 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: a [name=house]
+14:59:24.206 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: a [name=house]found
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

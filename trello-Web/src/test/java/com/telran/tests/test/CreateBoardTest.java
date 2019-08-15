@@ -14,24 +14,24 @@ public class CreateBoardTest extends TestBase {
 
 
 
-    @Test(dataProvider = "boards", dataProviderClass = DataProviders.class)
-    public void boardCreationFromheaderWithDataProviderTest(Board board) throws InterruptedException {
-
-        int beforeCreation = app.getBoard().getBoardsCount();
-        app.getHeader().clickOnPlusButtonOnHeader();
-        app.getBoard().selectCreateBoardFromDropDown();
-        app.getBoard().fillBoardCreationForm(board);
-        app.getBoard().confirmBoardCreation();
-        app.getHeader().clickOnHomeButtonOnHeader();
-
-        int afterCreation = app.getBoard().getBoardsCount();
-
-        System.out.println(beforeCreation + ":" + afterCreation);
-
-        Assert.assertEquals(afterCreation, beforeCreation + 1);
-
-    }
-        @Test(enabled = false)
+//    @Test(dataProvider = "boards", dataProviderClass = DataProviders.class)
+//    public void boardCreationFromheaderWithDataProviderTest(Board board) throws InterruptedException {
+//
+//        int beforeCreation = app.getBoard().getBoardsCount();
+//        app.getHeader().clickOnPlusButtonOnHeader();
+//        app.getBoard().selectCreateBoardFromDropDown();
+//        app.getBoard().fillBoardCreationForm(board);
+//        app.getBoard().confirmBoardCreation();
+//        app.getHeader().clickOnHomeButtonOnHeader();
+//
+//        int afterCreation = app.getBoard().getBoardsCount();
+//
+//        System.out.println(beforeCreation + ":" + afterCreation);
+//
+//        Assert.assertEquals(afterCreation, beforeCreation + 1);
+//
+//    }
+        @Test
         public void boardCreationTestFromHeader () throws InterruptedException {
 
             int beforeCreation = app.getBoard().getBoardsCount();

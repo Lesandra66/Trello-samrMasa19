@@ -32,12 +32,12 @@ public class TeamHelper extends HelperBase {
 
     public void confirmTeamDeletionButton() {
 
-      click(By.xpath("//*[@class='js-confirm full negate']"));
+      click(By.xpath("//input[@class='js-confirm full negate']"));
     }
 
     public void clickDeleteTeamLink() {
 
-        click(By.xpath("//*[@class='quiet-button']"));
+        click(By.xpath("//a[@class='quiet-button']"));
     }
 
     public void clickOnFirstTeam() {
@@ -69,11 +69,11 @@ public class TeamHelper extends HelperBase {
     public void cleanTeams() throws InterruptedException {
         int count = getTeamsCount();
         Pause(1000);
-        while ((count > 3)) {
+        while ((count > 2)) {
             clickOnFirstTeam();
             clickOnTeamSettings();
+            Pause(10000);
             clickDeleteTeamLink();
-            //Pause(2000);
             confirmTeamDeletionButton();
             count = getTeamsCount();
             Pause(1000);

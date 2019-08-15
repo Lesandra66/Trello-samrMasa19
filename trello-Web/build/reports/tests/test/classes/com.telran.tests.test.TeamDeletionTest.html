@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">17.546s</div>
+<div class="counter">1m1.36s</div>
 <p>duration</p>
 </div>
 </td>
@@ -69,9 +69,6 @@
 <li>
 <a href="#tab2">Standard output</a>
 </li>
-<li>
-<a href="#tab3">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -79,27 +76,14 @@
 <a name="testTeamDeletion"></a>
 <h3 class="failures">testTeamDeletion</h3>
 <span class="code">
-<pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input class=&quot;js-confirm full negate&quot; type=&quot;submit&quot;&gt; could not be scrolled into view
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P99IBT1', ip: '192.168.186.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2488, moz:profile: C:\Users\SAMR\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 71349454-96ea-402d-8a0c-4467cd346468
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.telran.tests.fw.HelperBase.click(HelperBase.java:16)
-	at com.telran.tests.fw.TeamHelper.confirmTeamDeletionButton(TeamHelper.java:35)
-	at com.telran.tests.test.TeamDeletionTest.testTeamDeletion(TeamDeletionTest.java:26)
+<pre>java.lang.AssertionError: expected [8] but found [4]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.telran.tests.test.TeamDeletionTest.testTeamDeletion(TeamDeletionTest.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,7 +150,7 @@ Session ID: 71349454-96ea-402d-8a0c-4467cd346468
 </thead>
 <tr>
 <td class="failures">testTeamDeletion</td>
-<td class="failures">17.546s</td>
+<td class="failures">1m1.36s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -174,19 +158,27 @@ Session ID: 71349454-96ea-402d-8a0c-4467cd346468
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:
-</pre>
-</span>
-</div>
-<div id="tab3" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>1565474304630	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474305508	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
-1565474306316	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:223:64
+<pre>14:58:00.111 [Test worker] INFO  com.telran.tests.test.TestBase - StarttestTeamDeletionwith parameters[]
+14:58:00.111 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: .home-left-sidebar-container .js-react-root li
+14:58:00.137 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: .home-left-sidebar-container .js-react-root lifound
+14:58:30.139 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: nav.home-left-sidebar-container .js-react-root
+14:58:30.172 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: nav.home-left-sidebar-container .js-react-rootfound
+14:58:30.172 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: .//li
+14:58:30.203 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: .//lifound
+9:
+14:58:30.203 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: [data-test-id='home-team-tab-name']
+14:58:30.233 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: [data-test-id='home-team-tab-name']found
+14:58:45.385 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //span[contains(text(),'Settings')]
+14:58:45.418 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //span[contains(text(),'Settings')]found
+14:58:45.556 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='quiet-button']
+14:58:46.002 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='quiet-button']found
+14:58:46.241 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: //*[@class='js-confirm full negate']
+14:58:46.284 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: //*[@class='js-confirm full negate']found
+14:59:01.434 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.cssSelector: nav.home-left-sidebar-container .js-react-root
+14:59:01.458 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.cssSelector: nav.home-left-sidebar-container .js-react-rootfound
+14:59:01.458 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - Start search elementBy.xpath: .//li
+14:59:01.493 [Test worker] INFO  c.t.t.f.ApplicationManager$MyListener - elementBy.xpath: .//lifound
+4
 </pre>
 </span>
 </div>
@@ -198,7 +190,7 @@ bail@chrome://marionette/content/sync.js:223:64
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at Aug 11, 2019 12:58:34 AM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Aug 12, 2019 2:59:35 PM</p>
 </div>
 </div>
 </body>
