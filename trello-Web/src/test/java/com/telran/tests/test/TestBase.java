@@ -23,6 +23,7 @@ public class TestBase {
     public void stopLogger(Method m){
         logger.info("Stop" + m.getName());
     }
+    //sssss
 
 
    public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
